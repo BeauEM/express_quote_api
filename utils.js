@@ -1,8 +1,13 @@
-const getRandomElement = arr => {
-  if (!Array.isArray(arr)) throw new Error('Expected an array');
+export const getRandomElement = (arr) => {
+  if (!Array.isArray(arr)) throw new Error("Expected an array");
   return arr[Math.floor(Math.random() * arr.length)];
-}
+};
 
-module.exports = {
-  getRandomElement
+export const findQuoteById = (id, arr) => {
+  return arr.find((item) => item.id === id);
+};
+
+export const findIndexByQuote = (id, arr) => {
+  const itemToBeSearched = findQuoteById(id, arr);
+  return arr.indexOf(itemToBeSearched);
 };
