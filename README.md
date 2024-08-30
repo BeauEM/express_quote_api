@@ -1,6 +1,6 @@
 # Express.js Quote Gnerator API
 
-## Gen Info
+## General Info
 
 This is a challenge project from Codecademy, desinged to test our knowledge of creating backends with Express.js.
 I created a small web app that allows users to create, read, update, delete data (CRUD).
